@@ -2,11 +2,14 @@
 
 
 import React from 'react'
+import HeroSection from './HeroSection'
+import GetQuote from './mainComponents/GetQuote/GetQuote'
 
 const MainPage = () => {
   return (
     <div>
-      main page
+      <HeroSection/>
+      <GetQuote/>
     </div>
   )
 }

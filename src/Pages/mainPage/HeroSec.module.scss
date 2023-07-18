@@ -1,0 +1,31 @@
+
+
+
+
+.herorow{
+    height: 550px;
+    .herobg{
+        background: url("/assets/images/Group\ 448.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px;
+        .heading{
+            font-size: 70px;
+            font-weight: bold;
+        }
+        .btn{
+            background-color:#FFB400;
+            border: 1px solid #FFB400 ;
+            font-size: 14px;
+            padding: 15px 30px;
+            border-radius: 0;
+        }
+    
+    }
+    .herobgcolor{
+        background-color: #FFB400;
+        padding: 50px;
+       
+    }
+}
+
