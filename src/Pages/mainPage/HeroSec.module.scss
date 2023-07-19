@@ -3,7 +3,6 @@
 
 
 .herorow{
-    height: 550px;
     .herobg{
         background: url("/assets/images/Group\ 448.svg");
         background-size: cover;
@@ -12,13 +11,6 @@
         .heading{
             font-size: 70px;
             font-weight: bold;
-        }
-        .btn{
-            background-color:#FFB400;
-            border: 1px solid #FFB400 ;
-            font-size: 14px;
-            padding: 15px 30px;
-            border-radius: 0;
         }
     
     }
@@ -29,3 +21,24 @@
     }
 }
 
+@media screen and (max-width:991px) {
+    .herobgcolor{
+        text-align: center;
+    }
+
+    
+}
+@media screen and (max-width:767px){
+    .herobg{
+        text-align: center;
+        .heroText{
+            justify-content: center !important;
+          .heading{
+            font-size: 40px;
+          }
+          .barImage{
+            height: 70px;
+          }
+        }
+    }
+}

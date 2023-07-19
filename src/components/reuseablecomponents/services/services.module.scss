@@ -1,0 +1,22 @@
+
+
+
+
+.heading{
+    font-size: 18px;
+}
+
+@media screen and (max-width:1100px) and (min-width:992px) {
+    .details{
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width:991px){
+    .details{
+        text-align: center;
+        padding-top: 20px;
+    }
+   .icons{
+    text-align: center;
+   }
+}

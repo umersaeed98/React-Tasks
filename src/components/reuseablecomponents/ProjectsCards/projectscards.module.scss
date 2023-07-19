@@ -1,0 +1,19 @@
+
+
+.mainCard{
+    padding: 20px;
+}
+
+.cardBody{
+    border: 1px solid #666666 !important;
+    margin-top: 2rem;
+    .head{
+        font-size: 18px;
+    }
+    .desp{
+        line-height: 27px;
+        color: #666666;
+        font-size: 14px;
+        width: none !important;
+    }
+}
