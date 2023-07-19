@@ -1,0 +1,57 @@
+
+
+.servicebg{
+    background: url("/assets/images/servicesbg.svg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+@media screen and (max-width:991px){
+    .servicebg{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+    }
+}
+
+.serviceDetails{
+    background-color: #F7F7F7;
+   .serviceFirstDetails{
+    padding: 65px;
+    .serviceHead{
+        color: #2A2A2A;
+        font-size: 40px;
+    }
+   }
+   .serviceSecondDetails{
+    padding: 50px 65px;
+   }
+    
+    .detailsText{
+        font-size: 15px;
+        color: #666666;
+        line-height: 27px;
+    }
+  
+}
+.endRow{
+    margin-top: 30px;
+    .counter{
+        background-color: #FFB400;
+        .years{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+    .completedProjects{
+        background-color: #2A2A2A;
+        .projectscompleted{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+

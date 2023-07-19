@@ -20,28 +20,28 @@ const Header = () => {
             navbarScroll
           >
             <LinkContainer to='home'>
-             <Nav.Link className='text-dark pe-3'>Home</Nav.Link>
+             <Nav.Link className='text-dark pe-2'>Home</Nav.Link>
             </LinkContainer>
            <LinkContainer to='about'>
-           <Nav.Link className='text-dark pe-3'>About</Nav.Link>
+           <Nav.Link className='text-dark pe-2'>About</Nav.Link>
            </LinkContainer>
             <LinkContainer to='project'>
-            <Nav.Link className='text-dark pe-3'>Project</Nav.Link>
+            <Nav.Link className='text-dark pe-2'>Project</Nav.Link>
             </LinkContainer>
             <LinkContainer to='blog'>
-            <Nav.Link className='text-dark pe-3'>Blog</Nav.Link>
+            <Nav.Link className='text-dark pe-2'>Blog</Nav.Link>
             </LinkContainer>
               <LinkContainer to='portfolio'>
-            <Nav.Link className='text-dark pe-3'>Portfolio</Nav.Link>
+            <Nav.Link className='text-dark pe-2'>Portfolio</Nav.Link>
             </LinkContainer>
               <LinkContainer to='service'>
-            <Nav.Link className='text-dark pe-3'>Service</Nav.Link>
+            <Nav.Link className='text-dark pe-2'>Service</Nav.Link>
             </LinkContainer>
               <LinkContainer to='services'>
-            <Nav.Link className='text-dark pe-3'>Services</Nav.Link>
+            <Nav.Link className='text-dark pe-2'>Services</Nav.Link>
             </LinkContainer>
               <LinkContainer to='contact'>
-            <Nav.Link className='text-dark pe-3'>Contact
+            <Nav.Link className='text-dark pe-2'>Contact
             <i className="fas fa-shopping-cart px-3"></i>
             </Nav.Link>
             </LinkContainer>
