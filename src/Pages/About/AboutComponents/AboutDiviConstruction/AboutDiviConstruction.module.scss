@@ -1,0 +1,18 @@
+
+
+
+.DiviConstruction{
+    font-weight: 700;
+    font-size: 40px;
+    color: #2A2A2A;
+}
+
+.diviText{
+    @media screen and (max-width:991px) {
+        text-align: center !important;
+    }
+}
+.textDivi{
+    font-size: 15px;
+    line-height: 30px;
+}

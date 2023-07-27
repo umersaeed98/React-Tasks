@@ -1,0 +1,16 @@
+
+.newsMain{
+    background: url("/assets/images/blogimg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .newsHeroHead{
+        padding: 100px;
+        @media screen and (max-width:991px){
+            text-align: center;
+        }
+        @media screen and (max-width:500px){
+            padding: 20px;
+        }
+    }
+}

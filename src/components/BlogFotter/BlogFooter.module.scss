@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+.BlogfooterLeft{
+    background-color: #FFB400;
+}
+
+.footerText{
+    font-size: 40px;
+}
+
+.text{
+    margin-right: 16px;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid white;
+    color:gray
+}
+@media screen and (max-width:628px){
+    .text{
+width: 100% !important;
+    }
+    .email{
+        margin-top: 20px;
+        width: 100% !important;
+    }
+}
+.textsurname{
+    width: 100%;
+    padding: 13px;
+    border: 1px solid white;
+    color:gray;
+    margin-top: 20px;
+}
+.email{
+    width: 100%;
+    border: 1px solid white;
+    color:gray;
+    padding: 13px;
+    margin-top: 20px;
+}
+.footerSections{
+    background-color: #2A2A2A;
+}
+.footerLists{
+    @media screen and (max-width:500px){
+        .footerLists{
+            padding:  0 !important;
+        }
+    }
+}
+
+.mainButton{
+
+    &:hover{
+        color: white !important;
+    }
+    @media screen and (max-width:400px){
+        width: 100% !important;
+    }
+
+    
+}
+

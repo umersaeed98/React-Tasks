@@ -11,6 +11,7 @@ import firstproject from '../../../../assets/images/projectsCard1.svg'
 import secondproject from '../../../../assets/images/projectscard2.svg'
 import thirdproject from '../../../../assets/images/projectscard3.svg'
 import Buttons from '../../../../components/reuseablecomponents/Buttons/Buttons'
+import { Link } from 'react-router-dom'
 
 const LatestProjects = () => {
   return (
@@ -25,7 +26,7 @@ const LatestProjects = () => {
         </Row>
         <Container>
             <Row className={styles.cardRow}>
-                <Col>
+                <Col lg={4} md={12} xs={12} sm={12}>
                 <ProjectsCards
                 image={firstproject}
                 title='Project Title'
@@ -34,7 +35,7 @@ const LatestProjects = () => {
                 border='none'
                 />
                 </Col>
-                <Col>
+                <Col lg={4} md={12} xs={12} sm={12}>
                 <ProjectsCards
                 image={secondproject}
                 title='Project Title'
@@ -42,7 +43,7 @@ const LatestProjects = () => {
                 border='none'
                 />
                 </Col>
-                <Col>
+                <Col lg={4} md={12} xs={12} sm={12} className={`${styles.thirdProjectmedia}`}>
                 <ProjectsCards
                 image={thirdproject}
                 title='Project Title'
@@ -51,15 +52,18 @@ const LatestProjects = () => {
                 />
                 </Col>
             </Row>
-            <Row>
+            <Row className='mt-5'>
                 <Col className='text-center'>
-                <Buttons
+                    <Link to='/portfolio'>
+                    <Buttons
                 color='#1F1F1F'
                 backgroundColor='white'
                 border='2px solid #1F1F1F'
                 text="VIEW ALL"
-                padding='10px 50px'
+                padding='10px 40px'
                 />
+                    </Link>
+                
                 </Col>
             </Row>
         </Container>

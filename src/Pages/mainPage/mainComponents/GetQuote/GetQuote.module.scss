@@ -4,3 +4,34 @@
 .quote{
     font-size: 40px;
 }
+.quoteButton{
+    &:hover{
+        background-color: red !important;
+    }
+}
+
+@media screen and (max-width:991px){
+    .quote{
+        text-align: center;
+    }
+    .btnCol{
+        text-align: center !important;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:520px){
+    .quote{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:399px){
+    .quote{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:338px){
+    .quote{
+        font-size: 23px;
+    }
+}

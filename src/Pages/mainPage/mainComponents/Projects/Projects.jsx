@@ -7,6 +7,7 @@ import styles from './Projects.module.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import belowborder from '../../../../assets/images/belowBorder.svg'
 import Buttons from '../../../../components/reuseablecomponents/Buttons/Buttons'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
@@ -34,10 +35,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim trist
                 
               </p>
             </Col>
-            <Col md={6} className={` ${styles.detailsText}`}>
+            <Col md={6} className={` text-muted ${styles.detailsText}`}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem posuere iaculis nunc amet phasellus.
               </p>
+              <Link to='/project'>
               <Buttons
               color='#1F1F1F'
               backgroundColor=" #F7F7F7"
@@ -46,6 +48,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim trist
               padding="15px 80px"
               marginTop="50px"
               />
+              </Link>
+             
             </Col>
           </Row>
           <Row className={`gx-0 ${styles.endRow}`}>

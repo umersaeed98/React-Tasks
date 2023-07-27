@@ -1,0 +1,45 @@
+
+
+
+
+.faqMain{
+    background-color: #F7F7F7;
+    .faqLeft{
+        @media screen and (max-width:991px) {
+            text-align: center;
+        }
+        .faqHead{
+            font-size: 40px;
+            font-weight: 700;
+            color: #2A2A2A;
+            @media screen and (max-width:450px) {
+                font-size: 35px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:575px){
+    .faqRow{
+        padding: 0 !important;
+    }
+}
+
+
+.headerBg{
+    button{
+        background-color: black;
+    }
+}
+
+
+.customAccordion{
+    .accordion-item:first-of-type {
+
+        .accordion-button{
+            background-color: black !important;
+            color: white !important;
+    }
+}
+}
+  

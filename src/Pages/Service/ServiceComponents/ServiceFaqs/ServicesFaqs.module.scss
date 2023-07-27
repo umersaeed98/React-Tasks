@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+.ServicefaqMain{
+    background-color: #F7F7F7;
+    @media screen and (max-width:400px) {
+        
+    }
+    .faqRow{
+        @media screen and (max-width:991px) {
+            padding: 10px !important;
+        }
+        .faqLeft{
+            @media screen and (max-width:991px) {
+                text-align: center !important;
+            }
+        }
+    }
+   
+    .faqHead{
+        font-size: 40px;
+        font-weight: 700;
+        color: #2A2A2A;
+    }
+}
+
+
+.headerBg{
+    button{
+        background-color: black;
+    }
+}
+
+
+.customAccordion{
+    .accordion-item:first-of-type {
+
+        .accordion-button{
+            background-color: black !important;
+            color: white !important;
+    }
+}
+}
+  

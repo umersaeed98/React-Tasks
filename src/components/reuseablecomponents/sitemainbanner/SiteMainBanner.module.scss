@@ -1,0 +1,22 @@
+
+
+
+
+.mainPageHeading{
+    @media screen and (max-width:991px) {
+        justify-content: center !important;
+    }
+    .mainBannerHeading{
+        font-size: 70px;
+        font-weight: bold;
+        @media screen and (max-width:767px){
+            font-size: 40px;
+        }
+    }
+
+}
+.bannerText{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}

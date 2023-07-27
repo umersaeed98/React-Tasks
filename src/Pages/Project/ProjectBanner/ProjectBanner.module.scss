@@ -1,0 +1,33 @@
+
+
+
+.projectMainBanner{
+    background: url("/assets/images//projectimg2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+        
+        .projectbannerleft{
+            padding: 100px;
+            @media screen and ( max-width:500px) {
+                padding: 20px;
+            }
+            @media screen and ( max-width:991px ){
+                text-align: center;
+            }
+        }
+        .projectbannerRight{
+            padding-top: 100px;
+            @media screen and (max-width:991px){
+                text-align: center;
+                padding: 20px 0;
+            }
+            .bannerPara{
+                font-size: 14px;
+                line-height: 32px;
+            }
+        }
+    
+    
+}

@@ -1,0 +1,29 @@
+
+
+.contactBannerMain{
+    .contantBannerCol{
+        background: url("/assets/images/Group\ 448.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px;
+        @media screen and (max-width:991px){
+            text-align: center !important;
+        }
+        @media screen and (max-width:500px){
+            padding: 20px;
+        }
+    }
+    .contactBannerBgColor{
+        background-color: #FFB400;
+        padding: 50px;
+        @media screen and (max-width:991px){
+            text-align: center;
+        }
+        .socialIcons{
+            padding-top: 20px;
+            @media screen and (max-width:991px){
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+
+.mainButton{
+
+    &:hover{
+        color: white !important;
+    }
+    @media screen and (max-width:400px){
+        width: 100% !important;
+    }
+
+    
+}
+
+

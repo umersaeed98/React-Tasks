@@ -8,9 +8,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         padding: 100px;
-        .heading{
-            font-size: 70px;
-            font-weight: bold;
+        @media screen and (max-width:991px) {
+            text-align: center;
         }
     
     }
@@ -33,12 +32,14 @@
         text-align: center;
         .heroText{
             justify-content: center !important;
-          .heading{
-            font-size: 40px;
-          }
           .barImage{
             height: 70px;
           }
         }
+    }
+}
+@media screen and (max-width:500px) {
+    .herobg{
+        padding: 20px !important;
     }
 }

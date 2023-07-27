@@ -5,16 +5,17 @@
 import React from 'react'
 import { Nav,Navbar,Container } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import styles from './Header.module.scss'
 
 const Header = () => {
   return (
    <Navbar expand="lg" bg='white' className='py-3'>
       <Container>
         <LinkContainer to='/'>
-        <Navbar.Brand className='fw-bold'>Construction Company Landing</Navbar.Brand>
+        <Navbar.Brand className={`fw-bold ${styles.brandHeader}`}>Construction Company Landing</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" className='text-center'>
           <Nav
             className="ms-auto my-2 my-lg-0 "
             navbarScroll
