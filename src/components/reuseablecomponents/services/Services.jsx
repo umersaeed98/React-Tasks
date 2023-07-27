@@ -4,16 +4,23 @@ import React from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import styles from './services.module.scss'
 
-const Services = ({color,image,heading,paraghaph,fontSize}) => {
+const Services = ({color,image,heading,paraghaph,fontSize,paddingTop,paddingRight}) => {
+  const servicesStyles ={
+    'color':color,
+    'paddingTop':paddingTop,
+    'paddingRight':paddingRight
+  }
   return (
-   <Container className='pt-4'>
+   <Container className={`${styles.servicesContainer}`}>
     <Row>
-<Col lg={2} md={12} sm={12} xs={12} className={` gx-0 ${styles.icons}`}>
-<img src={image} alt=""/>
-</Col>
-<Col lg={10} md={12} sm={12} xs={12} className={styles.details}>
-<h4 className={`fw-bold ${styles.heading}`}>{heading}</h4>
-<p className='text-light'>{paraghaph}</p>
+<Col className={` gx-0 ${styles.icons}`}>
+  <div style={servicesStyles}>
+  <img src={image} alt=""/>
+  </div>
+<div className={`${styles.contactDetails}`}>
+<h4 style={servicesStyles} className={`fw-bold ${styles.heading}`}>{heading}</h4>
+<p style={servicesStyles} className={`${styles.para}` } dangerouslySetInnerHTML={{ __html: paraghaph }}/>
+</div>
 </Col>
     </Row>
    </Container>

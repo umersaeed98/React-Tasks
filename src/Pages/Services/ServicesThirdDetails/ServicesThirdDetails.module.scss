@@ -1,0 +1,45 @@
+
+
+
+.servicesThirdDetailsContainer{
+    background-color: #F7F7F7;
+    padding: 45px;
+    @media screen and (max-width:991px) {
+        text-align: center;
+    }
+    @media screen and (max-width:400px) {
+        padding: 20px;
+    }
+
+    .unorderedListServices{
+        @media screen and (max-width:991px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        };
+        .listItemsServices{
+            color: #2A2A2A;
+            padding-top: 10px;
+        }
+    }
+}
+
+.servicesLastRow{
+    .quote{
+        background-color: #2A2A2A;
+        .number{
+            padding-top: 10px;
+            font-size: 18px;
+            font-size: 30px;
+        }
+    }
+    .onlineForm{
+        background-color: #FFB400;
+        .projectscompleted{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+}

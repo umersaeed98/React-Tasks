@@ -11,9 +11,11 @@ import Portfolio from './Pages/Portfolio/Portfolio'
 import Service from './Pages/Service/Service'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
-import './App.css';
+import FooterRouter from './components/FooterRouter/FooterRouter';
 
 function App() {
+
+  
   return (
     <Router>
       <Header/>
@@ -28,6 +30,7 @@ function App() {
         <Route path='services' element={<Services/>}/>
         <Route path='contact' element={<Contact/>}/>
       </Routes>
+      <FooterRouter/>
     </Router>
   );
 }

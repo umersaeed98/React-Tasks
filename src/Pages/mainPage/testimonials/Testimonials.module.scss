@@ -1,0 +1,34 @@
+
+
+.testimonialMain{
+    background-color: #F7F7F7;
+    .clientTesti{
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.mainCard{
+    padding: 30px 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 0;
+    .reviewStars{
+        width: 50%;
+        
+    }
+    .reviewData{
+        line-height: 30px;
+    }
+    .clientName{
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width:1134px){
+    .mainCard{
+        padding: 20px;
+    }
+}

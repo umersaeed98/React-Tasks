@@ -6,12 +6,12 @@ import {Card} from 'react-bootstrap';
 import Buttons from '../Buttons/Buttons';
 
 import styles from './projectscards.module.scss'
-
+import { Link } from 'react-router-dom';
 const ProjectsCards = ({image,title,description,fontSize,width,border}) => {
   const cardStyles = {
 'fontSize':fontSize,
 'width':width,
-'border':border
+'border':border,
   }
   return (
     <Card style={cardStyles} className={styles.mainCard}>
@@ -21,14 +21,22 @@ const ProjectsCards = ({image,title,description,fontSize,width,border}) => {
         <Card.Text className={styles.desp}>
          {description}
         </Card.Text>
-        <Buttons 
+        <div className='text-center'>
+          <Link to='/project'>
+          <Buttons
         color="#666666"
-        backgroundColor="white"
+        backgroundColor='transparent'
         border="2px solid #666666"
         text='VIEW PROJECT'
-        padding="15px 35px"
+        padding="10px 30px"
         marginTop="70px"
+        hoverBackgroundColor="yellow"
+        hoverColor='black'
         />
+          </Link>
+        
+        </div>
+       
       </Card.Body>
     </Card>
   )

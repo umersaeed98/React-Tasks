@@ -1,0 +1,50 @@
+
+
+
+
+.bgHomeServices{
+    background-color: #FFB400;
+    padding: 35px;
+}
+.homeProjects{
+    background-color: #F7F7F7;
+    .homeServicesHead{
+        padding: 65px;
+        @media screen and (max-width:450px){
+            padding: 30px !important;
+        }
+        .homeServicesText{
+            color: #2A2A2A;
+            font-size: 40px;
+        }
+    }
+    .homeProjectsText{
+        padding: 0 65px;
+        @media screen and (max-width:450px){
+            padding: 10px 30px !important;
+        }
+        .bottomText{
+            @media screen and (max-width:767px){
+                padding: 0 !important;
+            }
+            .projectTextDetails{
+                font-size: 14px;
+                line-height: 27px;
+            }
+        }
+       
+    }
+    
+}
+
+.endRowProjects{
+    margin-top: 91px;
+    background-color: #2A2A2A;
+    .freeConsultation{
+        .freeConsultationText{
+            color: white;
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+}

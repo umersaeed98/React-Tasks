@@ -12,46 +12,40 @@ import firstservices from '../../assets/images/services1.svg'
 import secondservices from '../../assets/images/services2.svg'
 import thirdservices from '../../assets/images/services3.svg'
 import Buttons from '../../components/reuseablecomponents/Buttons/Buttons'
+import SiteMainBanner from '../../components/reuseablecomponents/sitemainbanner/SiteMainBanner'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   return (
     <Container fluid>
       <Row className={`${styles.herorow}`}>
         <Col xl={8} lg={8} md={12} xs={12} sm={12} className={styles.herobg} >
-          <div className={` d-flex ${styles.heroText}`}>
-            <div className={styles.heroImage}>
-              <img src={vectorbar} alt="" className={styles.barImage} />
-            </div>
-            <div>
-              <h2 className={`text-light py-2 px-4 ${styles.heading}`}>
-                Construction
-              </h2>
-            </div>
-          </div>
-          <p className='text-light pt-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas error eos optio quia, cumque maxime voluptatibus perspiciatis non impedit nostrum expedita, saepe quam eveniet ducimus accusantium excepturi? Laboriosam, commodi asperiores!</p>
-
-
-
+          <SiteMainBanner
+          image={vectorbar}
+          heading='Construction'
+          paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis egestas pellentesque libero dolor in diam consequat ut. Mi nibh amet viverra id aliquet neque odio.'
+          />
+          <Link to='portfolio'>
           <Buttons
             color="white"
-            backgroundColor="#FFB400"
-            padding="15px 30px"
-            borderRadius="0"
+            backgroundColor=" #FFB400"
+            border='3px solid #FFB400 '
             text="VIEW OUR WORK"
-            fontSize="14px"
-            border="1px solid #FFB400"
-            marginTop="25px"
-          />
+            padding='15px 30px'
+            marginTop='20px'
+            />
+          </Link>
+          
 
-
+          
         </Col>
         <Col className={styles.herobgcolor} xl={4} lg={4} md={12} xs={12} sm={12}>
           <h2>
             Our Services
           </h2>
-          <Services image={firstservices} heading='Building Construction' paraghaph='Lorem ipsum dolor sit consectetur adipiscing elit. ' />
-          <Services image={secondservices} heading='Foundation Work' paraghaph='Lorem ipsum dolor sit consectetur adipiscing elit. ' />
-          <Services image={thirdservices} heading='Site Management' paraghaph='Lorem ipsum dolor sit consectetur adipiscing elit. ' />
+          <Services image={firstservices} heading='Building Construction' paraghaph='Lorem ipsum dolor sit consectetur adipiscing elit. ' paddingRight='20px' />
+          <Services image={secondservices} heading='Foundation Work' paraghaph='Lorem ipsum dolor sit consectetur adipiscing elit. ' paddingRight='20px' />
+          <Services image={thirdservices} heading='Site Management' paraghaph='Lorem ipsum dolor sit consectetur adipiscing elit. ' paddingRight='20px' />
         </Col>
       </Row>
     </Container>

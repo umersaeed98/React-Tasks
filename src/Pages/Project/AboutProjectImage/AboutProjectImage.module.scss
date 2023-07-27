@@ -1,0 +1,9 @@
+
+
+
+.imageMainRow{
+    padding: 0 4rem;
+    @media screen and (max-width:991px) {
+        padding: 3rem 0 !important;
+    }
+}

@@ -2,9 +2,15 @@
 
 
 import React from 'react'
+import styles from './Buttons.module.scss' 
+import '../../../assets/Style/hover-min.css'
+import '../../../assets/Style/hover.css'
 
-const Buttons = ({text,color,backgroundColor,borderRadius,padding,fontSize,border,marginTop}) => {
-    const styles = {
+const Buttons = ({text,color,backgroundColor,borderRadius,padding,fontSize,border,marginTop,width,classname}) => {
+
+
+
+    const buttonstyles = {
         'color':color,
         'backgroundColor':backgroundColor,
         'borderRadius':borderRadius,
@@ -13,11 +19,18 @@ const Buttons = ({text,color,backgroundColor,borderRadius,padding,fontSize,borde
         'border':border,
         'marginTop':marginTop,
         'fontweight':'600',
-        'cursor':'pointer'
+        'cursor':'pointer',
+        'width':width,
+
     }
+
+
+  
   return (
     <div>
-      <button style={styles}>
+      <button
+      style={buttonstyles} 
+      id='reusable-button' className={` hvr-sweep-to-right  ${styles.mainButton}`}>
         {text}
       </button>
     </div>

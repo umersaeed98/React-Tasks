@@ -1,0 +1,25 @@
+
+
+
+.onlineformCol{
+    @media screen and (max-width:991px) {
+        text-align: center;
+    }
+}
+
+.onlineFormEstimated{
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFB400;
+}
+.estimateText{
+    font-weight: 500;
+    font-size: 28px;
+    color: #2A2A2A;
+}
+
+.btnCol{
+    @media screen and (max-width:991px) {
+        text-align: center !important;
+    }
+}

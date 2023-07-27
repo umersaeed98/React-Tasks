@@ -1,0 +1,55 @@
+
+
+
+
+.aboutProjectMain{
+    .aboutProjectMainRow{
+        padding: 0 4rem;
+        @media screen and (max-width:991px){
+            padding-top: 3rem !important;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .aboutProjectLeft{
+            @media screen and (max-width:991px){
+                text-align: center;
+            }
+            .aboutProjectHeading{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 40px;
+            }
+            .projectabutText{
+                color: #666666;
+                font-size: 15px;
+                line-height: 27px;
+            }
+            .unorderedListItems{
+                @media screen and (max-width:991px) {
+                    display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0;
+                }
+                .liItems{
+                    color: #666666;
+                    font-size: 15px;
+                    line-height: 27px;
+                }
+            }
+        }
+        .aboutProjectRight{
+            @media screen and (max-width:991px) {
+                text-align: center;
+            }
+            .imgAbout{
+                @media screen and (max-width:991px) {
+                    width: 100%;
+                }
+            }
+            
+        }
+        
+    }
+}

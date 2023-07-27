@@ -1,0 +1,33 @@
+.servicesBanner{
+    background: url('/assets/images/service.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .aboutBannerLeft{
+        padding: 100px;
+        @media screen and ( max-width:500px) {
+            padding: 20px;
+        }
+        @media screen and ( max-width:991px ){
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+    }
+    .aboutBannerRight{
+        padding: 100px 50px;
+        @media screen and (max-width:500px) {
+            padding: 20px;
+        }
+        @media screen and (max-width:991px){
+            text-align: center;
+        }
+        .whatWeDo{
+            color: #FFB400;
+            font-weight: 700;
+            font-size: 32px;
+        }
+    }
+}

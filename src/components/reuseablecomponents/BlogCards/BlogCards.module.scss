@@ -1,0 +1,26 @@
+
+
+
+
+
+.BlogMainCard{
+    padding: 20px;
+    background: transparent;
+    .cardBody{
+        background: white !important;
+        .head{
+            font-size: 18px;
+        }
+        .desp{
+            line-height: 27px;
+            color: #666666;
+            font-size: 14px;
+            width: none !important;
+        }
+        .infoText{
+            font-size: 14px;
+            color: #C9C9C9;
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+
+
+
+.loweraboutProjectRow{
+    padding: 0 4rem;
+    @media screen and (max-width:991px){
+        padding: 0 !important;
+    }
+    .lowerProjectText{
+        color: #666666;
+        font-size: 15px;
+        line-height: 27px;
+        @media screen and (max-width:991px){
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+}

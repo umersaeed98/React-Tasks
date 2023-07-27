@@ -1,0 +1,33 @@
+
+
+
+.homeBg{
+    background: url("/assets/images/home-banner.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10rem 0 ;
+    .homeHead{
+        font-size: 64px;
+        font-weight: 700;
+        @media screen and (max-width:520px) {
+            font-size: 47px;
+        }
+        @media screen and (max-width:385px) {
+            font-size: 40px ;
+        }
+        @media screen and (max-width:331px){
+            font-size: 34px;
+        }
+    }
+    .homeDes{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        @media screen and (max-width:700px) {
+            font-size: 17px;
+        }
+    }
+}
+
+

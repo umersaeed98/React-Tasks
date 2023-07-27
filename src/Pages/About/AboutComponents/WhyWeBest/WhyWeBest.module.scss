@@ -1,0 +1,56 @@
+
+
+
+
+.whyWeBestLeft{
+    background-color: #F7F7F7;
+    padding: 75px 35px;
+    @media screen and (max-width:1228px) {
+        padding: 40px 35px !important;
+    }
+    @media screen and (max-width:991px){
+        text-align: center;
+    }
+    .whyWeBestLeftText{
+        color: #2A2A2A;
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .buttonQuote{
+        @media screen and (max-width:991px){
+            text-align: center !important;
+        }
+    }
+}
+
+.lastRowWhyChoose{
+    .counter{
+        background-color: #FFB400;
+        .years{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+    .completedProjects{
+        background-color: #2A2A2A;
+        .projectscompleted{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+}
+.endLastRowWhyChooseUs{
+    background-color: #F7F7F7 ;
+    .counter{
+        .years{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+    .completedProjects{
+        .projectscompleted{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    }
+}

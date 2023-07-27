@@ -7,6 +7,9 @@ import GetQuote from './mainComponents/GetQuote/GetQuote'
 import Projects from './mainComponents/Projects/Projects'
 import LatestProjects from './mainComponents/LatestProjects/LatestProjects'
 import Experience from './mainComponents/Experience/Experience'
+import Faqs from './mainComponents/FAQS/Faqs'
+import Testimonials from './testimonials/Testimonials'
+import Clients from './mainComponents/Clients/Clients'
 
 const MainPage = () => {
   return (
@@ -16,6 +19,9 @@ const MainPage = () => {
       <Projects/>
       <LatestProjects/>
       <Experience/>
+      <Faqs/>
+      <Testimonials/>
+      <Clients/>
     </React.Fragment>
   )
 }

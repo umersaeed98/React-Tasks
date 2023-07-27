@@ -1,19 +1,24 @@
 
 
 .mainCard{
-    padding: 20px;
+    padding: 20px ;
+    background: transparent;
+    @media screen and (max-width:400px){
+        padding: 5px 0;
+    }
+    .cardBody{
+        border: 1px solid #666666 !important;
+        margin-top: 2rem;
+        background: transparent;
+        .head{
+            font-size: 18px;
+        }
+        .desp{
+            line-height: 27px;
+            color: #666666;
+            font-size: 14px;
+            width: none !important;
+        }
+    }
 }
 
-.cardBody{
-    border: 1px solid #666666 !important;
-    margin-top: 2rem;
-    .head{
-        font-size: 18px;
-    }
-    .desp{
-        line-height: 27px;
-        color: #666666;
-        font-size: 14px;
-        width: none !important;
-    }
-}
