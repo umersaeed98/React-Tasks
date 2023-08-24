@@ -1,28 +1,31 @@
 
 
 
-import React from 'react'
+import React,{useContext} from 'react'
 import styles from './GetInTouch.module.scss'
 import { Col, Container,Row,Accordion } from 'react-bootstrap'
 import Buttons from '../../../../components/reuseablecomponents/Buttons/Buttons'
 import vector1 from '../../../../assets/images/Vector 1.svg'
+import { ThemeContext } from '../../../../assets/theme/Theme'
 
 const GetInTouch = () => {
+
+  const [{theme,theme2}] = useContext(ThemeContext)
   return (
-    <Container fluid className={`${styles.getInTouchForm}`}>
+    <Container fluid className={`${styles.getInTouchForm}`} style={{backgroundColor:theme2.backgroundColor}}>
 
     
     <Container>
         <Row className='py-5'>
             <Col lg={6} md={12} xs={12} sm={12} className={` p-4 ${styles.getInTouchLeft}`}>
-            <h2 className={styles.getInTouch}>
+            <h2 className={styles.getInTouch} style={{color:theme.color}}>
             Get In Touch
             </h2>
             <img src={vector1} alt="" />
             <form action="" className='pt-4'>
-                <input type="text" name="name" id="name" placeholder='Name' className={`  ${styles.getInTouchText}`} />
-                <input type="email" name='email' id='email' placeholder='Email' className={`  ${styles.getInTouchEmail}`} />
-                <textarea className={` mt-4 p-2 ${styles.textAreaGetInTouch}`}
+                <input type="text" name="name" id="name" placeholder='Name' className={`  ${styles.getInTouchText}`} style={{backgroundColor:theme.backgroundColor,color:theme.color}} />
+                <input type="email" name='email' id='email' placeholder='Email' className={`  ${styles.getInTouchEmail}`} style={{backgroundColor:theme.backgroundColor,color:theme.color}} />
+                <textarea className={` mt-4 p-2 ${styles.textAreaGetInTouch}`} style={{backgroundColor:theme.backgroundColor}}
         value='Message'
         rows={7} // Set the number of visible rows for the textarea
         cols={50} // Set the number of visible columns for the textarea

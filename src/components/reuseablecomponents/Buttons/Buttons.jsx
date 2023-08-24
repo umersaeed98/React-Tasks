@@ -5,6 +5,7 @@ import React from 'react'
 import styles from './Buttons.module.scss' 
 import '../../../assets/Style/hover-min.css'
 import '../../../assets/Style/hover.css'
+import { ThemeContext } from '../../../assets/theme/Theme';
 
 const Buttons = ({text,color,backgroundColor,borderRadius,padding,fontSize,border,marginTop,width,classname}) => {
 

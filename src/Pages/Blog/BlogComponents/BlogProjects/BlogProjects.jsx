@@ -1,7 +1,7 @@
 
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './BlogProjects.module.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import BlogCards from '../../../../components/reuseablecomponents/BlogCards/BlogCards'
@@ -11,9 +11,11 @@ import thirdNews from '../../../../assets/images/news3.svg'
 import fourthNews from '../../../../assets/images/news4.svg'
 import fifthNews from '../../../../assets/images/news5.svg'
 import sixthNews from '../../../../assets/images/news6.svg'
+import { ThemeContext } from '../../../../assets/theme/Theme'
 const BlogProjects = () => {
+  const [{theme,theme2}] = useContext(ThemeContext)
   return (
-<Container fluid className={`${styles.BlogCardsMainBg}`}>
+<Container fluid className={`${styles.BlogCardsMainBg}`} style={{backgroundColor:theme2.backgroundColor}}>
 <Container>
         <Row className='py-5'>
             <Col lg={4} md={12} sm={12} xs={12}>

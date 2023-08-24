@@ -8,8 +8,11 @@
     background-color: #2A2A2A;
     padding: 70px;
     @media screen and (max-width:991px) {
-        padding: 40px;
+        padding: 30px;
         text-align: center;
+    }
+    @media screen and (max-width:1133px) {
+        padding: 50px;
     }
     .experienceHead{
         font-size: 40px;

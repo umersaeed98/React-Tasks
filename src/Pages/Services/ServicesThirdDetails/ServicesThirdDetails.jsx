@@ -5,15 +5,17 @@
 
 
 
-import React from 'react'
+import React,{useContext} from 'react'
 import vector1 from '../../../assets/images/Vector 1.svg'
 import { Col, Container, Row } from 'react-bootstrap'
 import ServicesReuse from '../../../components/reuseablecomponents/ServicesReuse/ServicesReuse'
 import styles from './ServicesThirdDetails.module.scss'
 import Buttons from '../../../components/reuseablecomponents/Buttons/Buttons'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../../../assets/theme/Theme';
 
 const ServicesThirdDetails = () => {
+    const [{theme,theme2}] = useContext(ThemeContext)
     return (
         <>
         
@@ -23,7 +25,7 @@ const ServicesThirdDetails = () => {
                 <Col lg={3} md={12} sm={12} xs={12}>
 
                 </Col>
-                <Col lg={9} md={12} sm={12} xs={12} className={`${styles.servicesThirdDetailsContainer}`} >
+                <Col lg={9} md={12} sm={12} xs={12} className={`${styles.servicesThirdDetailsContainer}`} style={{backgroundColor:theme2.backgroundColor}} >
                     <ServicesReuse
                         heading='Building Construction'
                         image={vector1}
@@ -32,57 +34,57 @@ const ServicesThirdDetails = () => {
                     <Row>
 <Col lg={4} md={12} sm={12} xs={12}>
 <ul className={`${styles.unorderedListServices}`}>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Lectus erat consectetur
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Eu sapien eget
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Rhoncus consectetur
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Proin cursus
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Dolor a mollis consectetur
     </li>
 </ul>
 </Col>
 <Col lg={4} md={12} sm={12} xs={12}>
 <ul className={`${styles.unorderedListServices}`}>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Risus dolor fermentum
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Massa a commodo
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Elit dui sit amet risus
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Maecenas ornare
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Nisl a tortor ultrices
     </li>
 </ul>
 </Col>
 <Col lg={4} md={12} sm={12} xs={12}>
 <ul className={`${styles.unorderedListServices}`}>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Bibendum nulla fermentum
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Metus quis sodales
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Tristique augue mauri
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Molestie augue non
     </li>
-    <li className={`  ${styles.listItemsServices}`}>
+    <li className={`  ${styles.listItemsServices}`} style={{color:theme.color}}>
     Feugiat ligula neque
     </li>
 </ul>

@@ -1,10 +1,11 @@
 
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import {Card} from 'react-bootstrap';
 
 import styles from './BlogCards.module.scss'
+import { ThemeContext } from '../../../assets/theme/Theme'
 
 const BlogCards = ({image,title,description,fontSize,width,border,info}) => {
   const cardStyles = {
@@ -12,6 +13,7 @@ const BlogCards = ({image,title,description,fontSize,width,border,info}) => {
 'width':width,
 'border':border
   }
+  const [{theme}] = useContext(ThemeContext)
   return (
     <Card style={cardStyles} className={styles.BlogMainCard}>
       <Card.Img variant="top" src={image} />

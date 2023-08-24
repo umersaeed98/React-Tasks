@@ -20,8 +20,13 @@
     }
     .homeProjectsText{
         padding: 0 65px;
+        .projectTextDetails{
+            font-size: 14px;
+            line-height: 27px;
+        }
         @media screen and (max-width:450px){
             padding: 10px 30px !important;
+    
         }
         .bottomText{
             @media screen and (max-width:767px){

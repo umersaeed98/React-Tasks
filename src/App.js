@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -12,11 +12,15 @@ import Service from './Pages/Service/Service'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
 import FooterRouter from './components/FooterRouter/FooterRouter';
+import { ThemeContext } from './assets/theme/Theme';
 
 function App() {
-
-  
+const [{theme , isDark} , toggleTheme] = useContext(ThemeContext)
+console.log('theme' , theme)
   return (
+    <div className='app' style={{backgroundColor:theme.backgroundColor,color:theme.color}} >
+
+    
     <Router>
       <Header/>
       <Routes>
@@ -32,6 +36,15 @@ function App() {
       </Routes>
       <FooterRouter/>
     </Router>
+
+    <div className='text'>
+
+It's a {isDark ? 'dark theme' : 'light theme'} theme
+<button onClick={toggleTheme}>
+toggleTheme
+</button>
+    </div>
+    </div>
   );
 }
 

@@ -2,23 +2,26 @@
 
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Projects.module.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import belowborder from '../../../../assets/images/belowBorder.svg'
 import Buttons from '../../../../components/reuseablecomponents/Buttons/Buttons'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../../../../assets/theme/Theme'
 
 const Projects = () => {
+
+  const [{theme2,theme}] = useContext(ThemeContext)
   return (
     <Container fluid>
       <Row>
         <Col lg={4} md={12} sm={12} xs={12} className={`${styles.servicebg}`} >
         </Col>
-        <Col lg={8} md={12} sm={12} xs={12} className={` gx-0 ${styles.serviceDetails}`}>
+        <Col lg={8} md={12} sm={12} xs={12} className={` gx-0 ${styles.serviceDetails}`} style={{backgroundColor:theme2.backgroundColor}}>
           <Row className={` gx-0 ${styles.serviceFirstDetails}`}>
             <Col>
-            <h2 className={styles.serviceHead}>
+            <h2 className={styles.serviceHead} style={{color:theme.color}}>
             No Project Too Big Or Too Small
           </h2>
           <img src={belowborder} alt="" />
@@ -27,16 +30,16 @@ const Projects = () => {
           
           <Row className={`pt-4 gx-0 ${styles.serviceSecondDetails}`}>
             <Col md={6}>
-              <p className={` text-muted ${styles.detailsText}`}>
+              <p className={` ${styles.detailsText}`} style={{color:theme.color}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem posuere iaculis nunc amet phasellus.
-<p className='pt-5 mt-4 text-muted'>
+<p className='pt-5 mt-4' style={{color:theme.color}}>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam.
 </p>
                 
               </p>
             </Col>
-            <Col md={6} className={` text-muted ${styles.detailsText}`}>
-              <p>
+            <Col md={6} className={` ${styles.detailsText}`}>
+              <p style={{color:theme.color}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem posuere iaculis nunc amet phasellus.
               </p>
               <Link to='/project'>
