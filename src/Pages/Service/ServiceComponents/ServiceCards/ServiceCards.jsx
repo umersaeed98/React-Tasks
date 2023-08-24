@@ -1,7 +1,7 @@
 
 
 
-import React from 'react'
+import React,{useContext} from 'react'
 import styles from './ServiceCards.module.scss'
 import firstPortfolio from '../../../../assets/images/portfoliocard1.svg'
 import secondPortfolio from '../../../../assets/images/portfolioCard7.svg'
@@ -11,9 +11,11 @@ import Buttons from '../../../../components/reuseablecomponents/Buttons/Buttons'
 import vector1 from '../../../../assets/images/Vector 1.svg'
 import { Container,Row,Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../../../../assets/theme/Theme';
 const ServiceCards = () => {
+    const [{theme,theme2}] = useContext(ThemeContext)
   return (
-    <Container fluid className={`${styles.serviceCardsBg}`}>
+    <Container fluid className={`${styles.serviceCardsBg}`} style={{backgroundColor:theme2.backgroundColor}}>
 <Container>
     <Row className='pt-5'>
         <Col className='text-center'>

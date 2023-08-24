@@ -1,0 +1,60 @@
+
+
+body{
+  overflow-x: hidden !important;
+}
+h2{
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFB400;
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2a2a2a53;
+
+}
+
+:root {
+  // Default colors for light mode
+  --main-bg-color: transparent;
+  --main-text-color: black;
+
+  // Colors for dark mode
+  &:dark {
+    --main-bg-color: black;
+    --main-text-color: white;
+  }
+}
+
+// Other styles for light mode
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+// Add other styles for light mode here
+
+// ... other styles ...
+
+// Dark mode-specific styles
+@media (prefers-color-scheme: dark) {
+  // Apply dark mode styles to specific elements here
+  // For example, if you have a "dark-section" class that should have different styles in dark mode:
+  .dark-section {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+  }
+
+  // Add other dark mode styles here
+}

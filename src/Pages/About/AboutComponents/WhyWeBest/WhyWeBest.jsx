@@ -2,7 +2,7 @@
 
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './WhyWeBest.module.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import Services from '../../../../components/reuseablecomponents/services/Services'
@@ -10,12 +10,15 @@ import yellowArrow from '../../../../assets/images/yellowArrow.svg'
 import Buttons from '../../../../components/reuseablecomponents/Buttons/Buttons'
 import whyChooseUs from '../../../../assets/images/whyChooseUs.svg'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../../../../assets/theme/Theme'
 const WhyWeBest = () => {
+
+  const [{theme,theme2}] = useContext(ThemeContext)
   return (
-    <Container fluid>
+    <Container fluid >
         <Row className='mt-3'>
-            <Col lg={4} md={12} sm={12} xs={12} className={` gx-0 ${styles.whyWeBestLeft}`}>
-            <h2 className={`pb-4 ${styles.whyWeBestLeftText}`}>
+            <Col lg={4} md={12} sm={12} xs={12} className={` gx-0 ${styles.whyWeBestLeft}`} style={{backgroundColor:theme2.backgroundColor}} >
+            <h2 className={`pb-4 ${styles.whyWeBestLeftText}`} style={{color:theme.color}}>
             Only the Best
             </h2>
             <Services
@@ -24,6 +27,7 @@ const WhyWeBest = () => {
             heading='Eco Friendly Construction'
             paraghaph='Donec sollicitudin molestie malesuada.<br/> Praesent sapien massa, convallis  a pellentesque nec, egestas non nisi. '
             color='black'
+            
             />
             <Services
             paddingRight='15px'
@@ -65,12 +69,12 @@ const WhyWeBest = () => {
             <h4 className={` text-light ${styles.projectscompleted}`}>COMPLETED PROJECTS</h4>
             </Col>
           </Row>
-          <Row className={`py-3 gx-0 ${styles.endLastRowWhyChooseUs}`}>
+          <Row className={`py-3 gx-0 ${styles.endLastRowWhyChooseUs}`} style={{backgroundColor:theme2.backgroundColor}}>
             <Col md={6} className={` text-center py-3 ${styles.counter}`}>
             <h2>12</h2>
             <h4 className={`${styles.years}`}>YEARS ESTABLISHED</h4>
             </Col>
-            <Col md={6} className={` text-center py-3 ${styles.completedProjects}`}>
+            <Col md={6} className={` text-center py-3 ${styles.completedProjects}`} >
             <h2 >250</h2>
             <h4 className={`  ${styles.projectscompleted}`}>COMPLETED PROJECTS</h4>
             </Col>

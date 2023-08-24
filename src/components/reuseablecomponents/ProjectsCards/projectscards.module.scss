@@ -3,6 +3,7 @@
 .mainCard{
     padding: 20px ;
     background: transparent;
+    border: none;
     @media screen and (max-width:400px){
         padding: 5px 0;
     }
@@ -15,7 +16,7 @@
         }
         .desp{
             line-height: 27px;
-            color: #666666;
+            // color: #666666;
             font-size: 14px;
             width: none !important;
         }

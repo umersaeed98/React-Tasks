@@ -1,7 +1,7 @@
 
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Testimonials.module.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,16 +9,20 @@ import Slider from "react-slick";
 import { Container, Row, Col,Card } from 'react-bootstrap';
 import testimonialsData from '../../../assets/data/testimonialsData';
 import vector1 from '../../../assets/images/Vector 1.svg'
+import { ThemeContext } from '../../../assets/theme/Theme';
 
 
 const Testimonials = () => {
 
+  const [{theme}] = useContext(ThemeContext)
   const settings = {
     dots: false,
     infinite: true,
     autoplay: true,
     arrows: false,
-    speed: 500,
+    autoplaySpeed: 600,
+    cssEase: 'linear',
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -61,7 +65,7 @@ const Testimonials = () => {
     ]
   };
   return (
-    <Container fluid className={styles.testimonialMain}>
+    <Container fluid className={styles.testimonialMain} style={{backgroundColor:theme.backgroundColor}}>
 <Container>
   <Row className='pt-5'>
     <Col className='text-center'>
@@ -74,7 +78,7 @@ const Testimonials = () => {
         {
           testimonialsData.map((item => (
             
-              <Col key={item.id} lg={4} md={12} sm={12} xs={12}>
+              <Col key={item.id} lg={4} md={12} sm={12} xs={12} >
               <Card className={styles.mainCard}>
                 <div className='d-flex justify-content-center'>
                 <Card.Img variant="top" src={item.image} className={styles.reviewStars} />

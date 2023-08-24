@@ -40,10 +40,16 @@ width: 100% !important;
     }
 }
 .email{
-    width: 48%;
+    width: 47%;
     padding: 13px;
     border: 1px solid white;
-    color:gray
+    color:gray;
+    @media screen and (max-width:1920px) {
+        width: 48%;
+    }
+    @media screen and (max-width:1660px) {
+        width: 47%;
+    }
 }
 .textArea{
     width: 100%;
